@@ -1,0 +1,233 @@
+#amk 2
+#spc
+{
+	#title		"Overworld (Elephant)"
+	#game		"Super Mario Bros. Wonder"
+	#author		"Captain 3"
+	#comment	"I hate sampling Omnisphere sm"
+}
+#path "SMBWonderOverworld"
+#samples
+{
+#minimal
+	"belltree.brr"
+	"Drums1.brr"
+	"Drums2.brr"
+	"Drums3.brr"
+	"Drums4.brr"
+	"Drums5.brr"
+	"finger bass 1.brr"
+	"GuitarArp1.brr"
+	"GuitarArp2.brr"
+	"GuitarArp3.brr"
+	"GuitarArp4.brr"
+	"GuitarArp5.brr"
+	"GuitarArp6.brr"
+	"GuitarChord1.brr"
+	"GuitarChord2.brr"
+	"GuitarChord3.brr"
+	"GuitarChord4.brr"
+	"trombone low 2.brr"
+	"ocarina 1.brr"
+}
+#instruments
+{
+	"belltree.brr"	 				$F8 $EB $FF $08 $00	;@30 Bell tree
+	"Drums1.brr" 					$FF $ED $FF $03 $D0	;@31 Drums 1
+	"Drums2.brr" 					$FF $ED $FF $03 $D0	;@32 Drums 2
+	"Drums3.brr" 					$FF $ED $FF $03 $D0	;@33 Drums 3
+	"Drums4.brr" 					$FF $ED $FF $03 $D0	;@34 Drums 4
+	"Drums5.brr" 					$FF $ED $FF $03 $D0	;@35 Drums 5
+	"finger bass 1.brr"				$FF $EE $00 $04 $00	;@36 Finger bass
+	"GuitarArp1.brr" 				$FF $E0 $FF $07 $B0	;@37 Guitar Arp 1
+	"GuitarArp2.brr" 				$FF $E0 $FF $07 $B0	;@38 Guitar Arp 2
+	"GuitarArp3.brr" 				$FF $E0 $FF $07 $B0	;@39 Guitar Arp 3
+	"GuitarArp4.brr" 				$FF $E0 $FF $07 $B0	;@40 Guitar Arp 4
+	"GuitarArp5.brr" 				$FF $E0 $FF $07 $B0	;@41 Guitar Arp 5
+	"GuitarArp6.brr" 				$FF $E0 $FF $07 $B0	;@42 Guitar Arp 6
+	"GuitarChord1.brr" 				$8F $0E $FF $07 $B0	;@43 Guitar Chord 1
+	"GuitarChord2.brr" 				$8F $0E $FF $07 $B0	;@44 Guitar Chord 2
+	"GuitarChord3.brr" 				$8F $0E $FF $07 $B0	;@45 Guitar Chord 3
+	"GuitarChord4.brr" 				$8F $0E $FF $07 $B0	;@46 Guitar Chord 4
+	"trombone low 2.brr"			$00 $00 $7F $02 $00	;@47 Trombone
+	@3								$9F $48 $B8 $03 $00	;@48 Marimba
+	"ocarina 1.brr"					$FF $E0 $7F $04 $00	;@49 Whistle/Ocarina
+}
+
+w200
+
+t43 ;108 BPM
+
+(!100)[$F4$09]
+(!101)[$ED$0F$FA]
+
+;-------------------------------------------------------------------
+
+#0  ;Bass
+
+@36 v210 o3
+
+a2 d8. r8 e32 r16. f+16
+(004)[g8 r16 g32 r16. g32 r32] g8^32 r32 g32 r32 g32 r16. g16. r32 g16. r32
+(004)1 g8^32 r32 d32 r32 d16. r32 d16. r32 d16. r32
+
+/
+
+(004)1 (000)[g8^32 r32 g32 r32 g32 r16. g16. r32 d16. r32
+g+8 r16 g+32 r16. g+32 r32 g+8^32 r32 g+32 r32 g+32 r16. g+16. r32 g+16. r32
+a r16 a32 r16. a32 r32 a8^32 r32 a32 r32 a32 r16. a16. r32 d+16. r32
+d r16 d32 r16. d32 r32 d8^32 r32 d32 r32 d32 r16. d16. r32 f+16. r32]
+
+(004)1 g16. r16. g32 r32 g16. r32 g16. r32 d16. r32
+(004)1 g8^32 r32 g32 r32 g16. r32 d16. r32 d16. r32
+
+(004)1 (000)1
+(004)1 g16. r16. g32 r32 g16. r32 g16. r32 d16. r32
+(004)1 g8^32 r32 g32 r32 g16. r32 g16. r32 d16. r32 >
+
+(005)[c8 r16 c32 r16. c32 r32 c8^32 r32 c32 r32 c16. r32] c16. r32 c16. r32 <
+b8 r16 b32 r16. b32 r32 b8^32 r32 e32 r32 e16. r32 e16. r32 e16. r32
+a8 r16 a32 r16. a32 r32 a8^32 r32 d32 r32 d16. r32 d16. r32 d16. r32
+(004)1 g8^32 r32 g32 r32 g16. r32 g16. r32 b16. r32 >
+(005)1 d16. r32 c16. r32 <
+b8 r16 b32 r16. b32 r32 b8^32 r32 a+32 r32 a+16. r32 a+16. r32 a+16. r32
+a8 r16 a32 r16. a32 r32 a8^32 r32 a32 r32 a16. r32 a16. r32 d+16. r32
+d8 r16 d32 r16. d32 r32 d8^32 r32 d32 r32 d16. r32 d16. r32 f+16. r32
+
+(004)1 (000)1
+(004)1 g16. r16. g32 r32 g16. r32 g16. r32 d16. r32
+(004)1 g16. r16. d32 r32 d16. r32 d16. r32 d16. r32
+(004)1 g8^32 r32 g32 r32 g16. r32 g16. r32 g16. r32
+(004)1 g16. r16. g32 r32 g16. r32 g16. r32 d16. r32
+(004)1 g8^32 r32 g32 r32 g32 r16. g16. r32 g16. r32
+(004)1 g16. r16. d32 r32 d16. r32 d16. r32 d16. r32
+
+;-------------------------------------------------------------------
+
+#1	;Drums
+
+v230 o3
+
+(001)[@31c8 @32c8 @33c8 @34c8 @31c8 @32c8 @33c8 @35c8]
+(002)[@31c8 @32c8 @33c8 @35c8 @31c8 @32c8 @33c8 @34c8]2
+
+/
+
+[[(001)1
+(002)1
+(001)2
+(003)[@31c8 @32c8 @33c8 @34c8 @31c8 @32c8 @35c8 @34c8]
+(001)]]2
+
+[@31c8 @32c8 @33c8 @35q7Bc16. c32 q7F]16
+
+[[(001)1
+(002)1
+(001)2
+(003)1
+(001)]]2
+
+(002)4
+
+;-------------------------------------------------------------------
+
+#2	;Bell tree, Whistle/Ocarina
+
+@30 v200 o3
+
+$F4$01
+
+r2 c1^2^8 r2.. > @49 q75
+
+/
+
+[d2. g4 b8. > c8. < b8 g4 d4 e2.. g8 > c8. d8. c2 < a8]
+b2^4^16 a8. > c8. < b8. g2^8
+
+g2. > g4 f+8. d8. < b4. g4 e2 r8 a8. b8. > c2^8 < f+8. a8. a8. b8. g2. f+8. a8. g2 > 
+e2. f+4 g8. d2^16 r16 < b8. > c4.. r8. d8. e8. f+8. < b4. r16 g8 b8 > d8
+e2. f+4 g8. d8 < b16 g8 g4 e8 g8 g4. > c8. < b8. g8 e8 e2 d2
+
+*1
+b2.. g8 f+8. a8. g2^8 d2^8 e8 g8 > d8 c2^16 r16 < b4 a8 b8. g8. d1 c8 < b8. > c8. d8
+
+;-------------------------------------------------------------------
+
+#3	;Trombone 1
+
+@47 v200 o3
+
+r1^1^1 (!100, -1) (!101, 3) $DE$00$0E$3D
+
+/
+
+[d16. r32 g16 a8 b16 g16 d4.. r2^8
+d8 r16 e16 r16 g16 r16 > c2^16 r2
+c8 r16 c32 r16. c32 r16. c32 r32 c4. r16 c32 r32 c8 r16 < b32 r8^32 g2^16^32 r1^32]2 >
+
+e8 r16 e32 r16. d+32 r32 e4^16^32 r32 e32 r16. c32 r16.
+d8 r16 d32 r16. c+32 r32 d4... r16. < b32 r32 >
+c8 r16 c32 r16. < b32 r32 > c4^16^32 r32 c32 r16. < a32 r16.
+b8 r16 b32 r16. a16 g2^16 > d+16
+e8 r16 e32 r16. d+32 r32 e4^16^32 r32 f+32 r16. e32 r16.
+d8 r16 d32 r16. f16 $DD$00$04g < g2^32 r16.
+g8 r16 g32 r16. e32 r32 g4^16 r16 e32 r16. g32 r16.
+g8 r16 g32 r16. g32 r32 a2 r8
+
+*1 [r1]4
+
+;-------------------------------------------------------------------
+
+#4	;Marimba, Trombone 2
+
+v200 o3
+
+r1^1^1 (!100, -1) (!101, 3) 
+
+/
+
+[$DF
+@48y11d16. r32 g16 a8 b16 g16 d4.. r2^8
+y9d8 r16 e16 r16 g16 r16 > c2^16 r2 <
+$DE$00$0E$3D
+@47y10f+8 r16 f+32 r16. f+32 r16. f+32 r32 f+4. r16 f+32 r32 f+8 r16 f+32 r8^32 d2^16^32 r1^32]2
+
+g8 r16 g32 r16. f+32 r32 g4^16^32 r32 g32 r16. e32 r16.
+f+8 r16 f+32 r16. f32 r32 f+4... r16. d+32 r32
+e8 r16 e32 r16. d+32 r32 e4^16^32 r32 e32 r16. c32 r16.
+d8 r16 d32 r16. c16 < b2^16 > f+16
+g8 r16 g32 r16. f+32 r32 g4^16^32 r32 a32 r16. g32 r16.
+f+8 r16 f+32 r16. a16 $DD$00$04b < a+2^32 r16. >
+c8 r16 c32 r16. < a32 r32 > c4^16 r16 < a32 r16. > c32 r16.
+c8 r16 c32 r16. c32 r32 d2 r8
+
+*1 [r1]4
+
+;-------------------------------------------------------------------
+
+#5	;Guitar
+
+y9 v255 o3
+
+@43c16 q7Dc16 r16 q7Bc16 @44q7Dc16 q7Fc16 r16 c16 @45c16 q7Dc16 r16 q7Fc16 @46c4 <<
+
+@37g+2 @38g+2 @39g+2 @38g+2
+
+/
+
+[@37g+2 g+2 @40g+2 g+2 @41g+2 g+2 @39g+2 g+2 @37g+2 g+2] g+2 g+2 
+*1 g+2 g+2 >>
+
+@45f8. f8. f8. f16 r8 f16 f16 r8
+@46f8. f8. f8. f16 r8 f16 f16 r8
+@44c8. c8. c8. c16 r8 c16 c16 r8
+@45c16 q7Bc8 c16 q7Fc8 q7Bc16 c8 < @46f16 q7Ff8 f8 q7Bf8 q7F >
+@45f8. f8. f8. f16 r8 f16 f16 r8
+@46f8. f8. f8. < @44a+16 r8 a+16 a+16 r8 >
+@43c16 q7Dc16 r16 q7Bc16 q7Fc16 q7Dc16 r16 q7Bc16
+@44q7Dc16 q7Fc16 r16 c16 q7Dc16 q7Fc16 r16 c16
+@45c16 q7Dc16 r16 q7Fc16 c16 q7Dc16 r16 q7Fc16
+@46c16 q7Dc16 r16 q7Fc16 c16 q7Dc16 r16 q7Fc16 <<
+
+*1 g+2 @42g+2
+[@37g+2 @38g+2 @39g+2 @38g+2]2
